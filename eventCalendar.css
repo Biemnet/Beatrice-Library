@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-image: url("./images/homepage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: rgba(70, 218, 191, 0.7);
+  min-height: 100vh;
+}
+
+.list a {
+  color: black;
+}
+.list a:link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 30px;
+  list-style: none;
+  display: flex;
+  flex-basis: 65%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 180px;
+  margin-left: 180px;
+}
+
+.list button {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  width: auto;
+  padding: 10px 20px;
+  background: rgba(70, 218, 191, 0.7);
+}
+
+.list button:hover {
+  cursor: pointer;
+}
+
+.list img {
+  width: 17px;
+  height: 17px;
+}
+
+.midSection {
+  position: relative;
+  color: rgba(78, 77, 77, 1);
+  background: rgba(224, 224, 224, 0.75);
+  border-radius: 20px;
+  width: 80%;
+  margin: 60px auto;
+}
+
+.midSection h3 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-family: "Arial Rounded MT Bold";
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+  line-height: 24px;
+}
+
+.midSection h5 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.midContent {
+  display: flex;
+  margin: 60px auto;
+}
+
+.midContent img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.childTeen,
+.adult {
+  display: grid;
+  padding: 30px;
+}
+
+.childTeen button,
+.adult button {
+  margin: 20px auto;
+  cursor: pointer;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(78, 77, 77, 1);
+  background: rgba(70, 218, 191, 0.75);
+  padding: 24px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+footer {
+  flex-direction: column;
+  text-align: center;
+  font-family: "Arial Rounded MT Bold";
+  color: rgba(78, 77, 77, 1);
+}
+
+.social_media_icons h3 {
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.social_media_icons {
+  justify-content: center;
+}
+
+.social_media_icons img {
+  height: 30px;
+  padding: 5px;
+}
