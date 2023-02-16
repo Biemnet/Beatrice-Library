@@ -9,19 +9,52 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu">
-        <ul class="list">
-          <li><a href="#">Welcome</a></li>
-          <li><a href="#">About</a></li>
-          <button class="libraryCatalog">
-            <img src="./images/search.png" alt="" /> Library Catalog
-          </button>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Donate</a></li>
-          <li><a href="#">My Account</a></li>
-          <button>Sign In</button>
+      <input type="checkbox" id="toggle" />
+
+      <nav>
+        <label class="navbar-toggler" for="toggle">
+          <span class="bar-icon"></span>
+          <span class="bar-icon"></span>
+          <span class="bar-icon"></span>
+        </label>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutLibrary.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="libraryCatalog">
+              <a href="catalog.html" class="nav-link">
+                <img src="./images/search.png" alt="" />
+                Library Catalog
+              </a>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventCalendar.html">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="donation.html">Donate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="myAccount.html">MyAccount</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="signin">
+              <a href="signIn.html" class="nav-link">SignIn</a>
+            </button>
+          </li>
         </ul>
-      </div>
+      </nav>
 
       <div class="midSection">
         <h3>Location + Hours</h3>
@@ -60,8 +93,11 @@
           <br />
           <br />
           <p>A letter of acknowledgement will be sent to the donor.</p>
-
-          <button>Donate Here</button>
+          <div class="donate">
+            <button>
+              <a href="donation.html">Donate Here</a>
+            </button>
+          </div>
         </div>
       </div>
       <footer>

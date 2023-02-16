@@ -9,25 +9,54 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu">
-        <ul class="list">
-          <li><a href="#">Welcome</a></li>
-          <li><a href="#">About</a></li>
-          <button class="libraryCatalog">
-            <img src="./images/search.png" alt="" /> Library Catalog
-          </button>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Donate</a></li>
-          <li><a href="#">My Account</a></li>
-          <button>Sign In</button>
+      <input type="checkbox" id="toggle" />
+
+      <nav>
+        <label class="navbar-toggler" for="toggle">
+          <span class="bar-icon"></span>
+          <span class="bar-icon"></span>
+          <span class="bar-icon"></span>
+        </label>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutLibrary.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="libraryCatalog">
+              <a href="catalog.html" class="nav-link">
+                <img src="./images/search.png" alt="" />
+                Library Catalog
+              </a>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventCalendar.html">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="donation.html">Donate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="myAccount.html">MyAccount</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="signin">
+              <a href="signIn.html" class="nav-link">SignIn</a>
+            </button>
+          </li>
         </ul>
-      </div>
+      </nav>
 
       <div class="midSection">
-        <div class="beatriceIcon">
-          <img src="./images/beatriceIcon.png" alt="" />
-        </div>
-
         <div class="welcomePage">
           <h1>Welcome Back to BPL</h1>
           <div class="email">
@@ -40,20 +69,22 @@
           </div>
           <div class="signin">
             <button>Sign In</button>
-            <h5>Sign In With</h5>
+            <h5>Sign Up With:</h5>
           </div>
 
           <div class="social_media_icons_signin">
             <button>
-              <img src="./images/facebook.png" alt="" />
-              <img src="./images/apple.png" alt="" />
-              <img src="./images/google.png" alt="" />
+              <a href="#">
+                <img src="./images/facebook.png" alt="" />
+                <img src="./images/apple.png" alt="" />
+                <img src="./images/google.png" alt=""
+              /></a>
             </button>
           </div>
 
           <div class="notMember">
             <h5>Not yet a member?</h5>
-            <a href="Sign Up Here">Sign Up Here</a>
+            <a href="createProfile.html">Sign Up Here</a>
           </div>
         </div>
       </div>

@@ -18,28 +18,60 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu">
-        <ul class="list">
-          <li><a href="#">Welcome</a></li>
-          <li><a href="#">About</a></li>
-          <button class="libraryCatalog">
-            <img src="./images/search.png" alt="" /> Library Catalog
-          </button>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Donate</a></li>
-          <li><a href="#">My Account</a></li>
-          <button>Sign In</button>
+      <input type="checkbox" id="toggle" />
+
+      <nav>
+        <label class="navbar-toggler" for="toggle">
+          <span class="bar-icon"></span>
+          <span class="bar-icon"></span>
+          <span class="bar-icon"></span>
+        </label>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutLibrary.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="libraryCatalog">
+              <a href="catalog.html" class="nav-link">
+                <img src="./images/search.png" alt="" />
+                Library Catalog
+              </a>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventCalendar.html">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="donation.html">Donate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="myAccount.html">MyAccount</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="signin">
+              <a href="signIn.html" class="nav-link">SignIn</a>
+            </button>
+          </li>
         </ul>
-      </div>
+      </nav>
 
       <div class="midSection">
         <h1>Browse Our Catalog</h1>
         <div class="searchByAuthor">
           <h3>Search</h3>
           <img src="./images/search.png" alt="" />
-          <input type="text" placeholder="       Chimamanda Ngozi Adichie" />
+          <input type="text" placeholder="    Chimamanda Ngozi Adichie" />
           <h3><a href="#">by author</a></h3>
-          img
         </div>
 
         <div class="beatriceIcon">
@@ -48,7 +80,7 @@
 
         <div class="welcomePage">
           <h4>SEARCH RESULTS - Available Books</h4>
-          <ul>
+          <ul class="list">
             <li>
               <a href="#">Notes On Grief (2021), Chimamanda Ngozi Adichie</a>
             </li>
@@ -115,24 +147,27 @@
           </ul>
         </div>
 
-        <div class="search"><button>SEARCH CATALOG</button></div>
-
+        <div class="search">
+          <button>
+            <a href="catalog.html">SEARCH CATALOG</a>
+          </button>
+        </div>
 
         <div class="carousel">
           <div class="left">
-            <a href="#"><img src="./images/left.png" alt=""></a>
+            <a href="#"><img src="./images/left.png" alt="" /></a>
           </div>
 
-        <div class="inBetween">
-          <button>Available Now</button>
-          <button>Best Sellers</button>
-          <button>Most Popular</button>
-          <button>Children's Books</button>
-          <button>Young Adult</button>
-          <button>Newest Titles</button>
-        </div>
+          <div class="inBetween">
+            <button>Available Now</button>
+            <button>Best Sellers</button>
+            <button>Most Popular</button>
+            <button>Children's Books</button>
+            <button>Young Adult</button>
+            <button>Newest Titles</button>
+          </div>
           <div class="right">
-            <a href="#"><img src="./images/right.png" alt=""></a>
+            <a href="#"><img src="./images/right.png" alt="" /></a>
           </div>
         </div>
       </div>

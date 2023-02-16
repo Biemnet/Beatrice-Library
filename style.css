@@ -23,11 +23,11 @@ nav {
   padding: 0 15%;
   height: 75px;
   line-height: 55px;
-  font-family: Arial, Helvetica, sans-serif;
   background: rgba(70, 218, 191, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav .nav-list {
+  nav .nav-list {
   display: flex;
   z-index: 10;
 }
@@ -73,21 +73,11 @@ nav .nav-item button {
 }
 
 .midSection {
-  text-align: center;
   position: relative;
-  color: rgba(78, 77, 77, 1);
   background: rgba(224, 224, 224, 0.75);
   border-radius: 20px;
   width: 80%;
-  margin: 50px auto;
-}
-
-.midSection h1 {
-  padding-top: 80px;
-  font-family: "Arial Rounded MT Bold";
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 24px;
+  margin: 60px auto;
 }
 
 .beatriceIcon {
@@ -102,100 +92,63 @@ nav .nav-item button {
   border-radius: 20px;
 }
 
+.details {
+  text-align: center;
+}
+
+.bookshelf img {
+  margin-top: 120px;
+  width: 55%;
+  height: 420px;
+  border-radius: 30px;
+  color: rgba(70, 218, 191, 0.7);
+  border-style: solid;
+  box-sizing: border-box;
+}
+
 .welcomePage {
-  font-family: "Arial Rounded MT Bold";
+  display: inline-block;
+  border-radius: 5px;
+  border-style: none;
+  width: auto;
   font-style: normal;
   font-size: 24px;
   font-weight: none;
+  margin-top: 10px;
 }
 
-.welcomePage h1 {
-  line-height: 58px;
-}
-
-.names,
-.email,
-.password {
-  padding: 20px;
-}
-
-.names input,
-.email input,
-.password input {
-  width: 40%;
-  padding: 15px;
-  border-radius: 30px;
-}
-
-.signin button {
-  width: 40%;
-  padding: 15px;
-  border-radius: 30px;
-  font-family: "Arial Rounded MT Bold";
+.welcomePage h1,
+h6 {
+  line-height: 40px;
   color: rgba(78, 77, 77, 1);
-  background-color: rgba(70, 218, 191, 0.7);
-  font-style: normal;
-  font-size: 24px;
-  font-weight: none;
 }
 
-.signin h5 {
-  padding: 10px;
-}
-
-.social_media_icons_signin button {
-  width: 40%;
-  padding: 15px;
-  border-radius: 30px;
-  background: rgba(224, 224, 224, 0.75);
-  font-style: normal;
-  font-size: 24px;
-  font-weight: none;
-}
-
-.social_media_icons_signin img {
+.welcomePage button {
   cursor: pointer;
-  height: 3vh;
+  font-size: 24px;
+  line-height: 28px;
+  background: rgba(70, 218, 191, 0.75);
+  color: rgba(78, 77, 77, 1);
+  padding: 14px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
-.social_media_icons_signin a {
+.search {
+  text-align: center;
+}
+
+.search a {
+  cursor: pointer;
   text-decoration: none;
-}
-
-.social_media_icons h3 {
-  font-family: "Arial Rounded MT Bold";
-}
-
-.notMember {
-  display: inline-flex;
-  align-items: center;
-  padding: 30px;
-}
-
-.notMember a {
-  font-size: 20px;
   color: rgba(78, 77, 77, 1);
 }
 
 footer {
   flex-direction: column;
   text-align: center;
-  font-family: "Arial Rounded MT Bold";
   color: rgba(78, 77, 77, 1);
-}
-
-.social_media_icons h3 {
-  text-decoration: underline;
-  padding-bottom: 10px;
-}
-
-.social_media_icons {
-  justify-content: center;
-}
-
-.social_media_icons img {
-  height: 30px;
-  padding: 5px;
 }
 
 @media (max-width: 935px) {
@@ -211,69 +164,18 @@ footer {
     display: none;
   }
 
-  .midSection h1 {
-    font-size: 24px;
+  .welcomePage {
+    font-size: 15px;
   }
 
-  .welcomePage h5 {
+  .welcomePage button {
     font-size: 14px;
-    padding-bottom: 5px;
+    padding: 14px;
   }
 
-  .welcomePage ul {
-    font-size: 12px;
-  }
-
-  .names,
-  .email,
-  .password {
-    padding: 10px;
-  }
-
-  .names input,
-  .email input,
-  .password input {
-    width: 60% auto;
-    padding: 10px;
-  }
-
-  .signin button {
-    width: 60% auto;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .signin h5 {
-    padding: 10px;
-  }
-
-  .social_media_icons_signin button {
-    width: 60% auto;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .social_media_icons_signin img {
-    height: 2vh;
-  }
-
-  .notMember {
-    display: inline-flex;
-    padding: 20px;
-  }
-
-  .notMember h5 {
-    font-size: 14px;
-    padding: 7px;
-  }
-
-  .notMember a {
-    text-decoration: underline;
-    font-size: 14px;
-  }
-
-  .social_media_icons img {
-    height: 20px;
+  .bookshelf img {
+    margin-top: 100px;
+    height: 300px;
   }
 }
 
@@ -304,61 +206,50 @@ footer {
     display: grid !important;
   }
 
+  .beatriceIcon img {
+    display: none;
+  }
+
   .midSection {
-    margin: 30px auto;
+    margin: 20px auto;
   }
 
-  .midSection h1 {
+  .midSection img {
+    width: 100%;
+    height: auto;
     padding: 20px;
+  }
+
+  .bookshelf img {
+    margin-top: 30px;
+  }
+
+  .welcomePage {
+    padding: 2px;
+  }
+  .welcomePage h1 {
+    font-size: 20px;
+  }
+
+  .welcomePage h1,
+  h6 {
     line-height: 28px;
+    color: rgba(78, 77, 77, 1);
   }
 
-  .welcomePage h5 {
+  .welcomePage button {
     font-size: 14px;
-    padding-bottom: 5px;
-  }
-
-  .names,
-  .email,
-  .password {
-    padding: 8px;
-  }
-
-  .names input,
-  .email input,
-  .password input {
-    width: 80%;
-  }
-
-  .signin button {
-    width: 80%;
-  }
-
-  .signin h5 {
     padding: 10px;
   }
 
-  .social_media_icons_signin button {
-    width: 80%;
+  .search a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(78, 77, 77, 1);
   }
 
-  .notMember {
-    display: inline-flex;
-    padding: 0px;
-  }
-
-  .notMember h5 {
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  .notMember a {
-    text-decoration: underline;
-    font-size: 12px;
-  }
-
-  .social_media_icons img {
-    height: 20px;
+  .footertxt {
+    padding-top: 50px;
   }
 }
 
@@ -378,7 +269,7 @@ nav .navbar-toggler .bar-icon {
   transition: 1s;
 }
 
-#toggle {
+input {
   display: none;
 }
 
@@ -402,4 +293,3 @@ input:checked ~ nav .navbar-toggler .bar-icon:nth-child(2) {
 input:checked ~ nav .navbar-toggler .bar-icon:nth-child(3) {
   transform: rotate(-45deg);
 }
-
